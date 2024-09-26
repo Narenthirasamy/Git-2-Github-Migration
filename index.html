@@ -18,8 +18,13 @@
     </style>
   </head>
   <body>
+    background-image: url(tech_week_hr.png)
+background-position: center;
+background-repeat: no-repeat;
+background-size: contain;      /* applied using JavaScript only if background-image is larger than slide */
+
     <textarea id="source">
-background-image: url(tech_week_hr.png)
+
 class: center, middle
 
 # Migration from Git to GitHub 
@@ -35,10 +40,15 @@ Purpose of the Talk: Explain the significance of migrating to GitHub.
 
 
 * Understanding Git and Github
+      
 * Why? - Reasons for Migration
+      
 * Migration Process
+      
 * Best Practices
+      
 * Challenges and Solutions
+      
 * Q & A
 
 ???
@@ -99,17 +109,23 @@ Visibility and Discoverability:- Open Source Projects: GitHub is known for its v
 ---
 
 # Migration Process
+      
      * Preparation
+      
      * Use GitHub Tools for Migration
          GitHub Importer
          GitHub CLI
          GitHub Enterprise Importer
+      
      * Manual Migration
+      
      * Integrity check Post-Migration
-     * GitHub Actions: If CI/CD is part of your workflow, ensure that your workflows are compatible with GitHub Actions post-migration. 
+      
+     * GitHub Actions
+      
      * Additional Considerations
-        Test Migration: Conduct a dry run with a small repository to identify potential issues before the full migration.
-        User Training: Prepare documentation and training sessions for team members on using GitHub effectively post-migration.
+        Test Migration
+        User Training
 
 ???
 Preparation: Assess Current Repositories and Workflows: Evaluate existing repositories to understand their structure, dependencies, and workflows. This helps identify which repositories are essential for migration.
@@ -121,12 +137,16 @@ Use GitHub Tools for Migration:
       GitHub Importer: A tool that simplifies the migration process from other platforms (like Bitbucket or GitLab) to GitHub.
       GitHub CLI: The GitHub Command Line Interface allows for scripted migrations and can be used to automate tasks during the migration.
       GitHub Enterprise Importer: For organizations migrating from GitHub Enterprise Server to GitHub Enterprise Cloud, this tool facilitates the transfer of repositories and associated data.
-      
+
+Github Actions: If CI/CD is part of your workflow, ensure that your workflows are compatible with GitHub Actions post-migration. 
 GitHub is designed to handle large-scale projects with ease. 
 Real-Life Examples of Large Migrations
 Microsoft: Transitioned over 60,000 repositories
 IBM: Migrated its cloud development teams to GitHub 
 The Linux Foundation: Moved many of its projects to GitHub 
+
+Test Migration: Conduct a dry run with a small repository to identify potential issues before the full migration.
+User Training: Prepare documentation and training sessions for team members on using GitHub effectively post-migration.
 
 ---
 
@@ -164,6 +184,7 @@ Post-Migration Validation: After migration, both organizations implement compreh
   * Documentation and Training
   * Utilize GitHub Migration Tools
   * Establish Clear Communication Channels
+      
 # Post-Migration Support
 # Review and Adjust Workflows
 
